@@ -5,3 +5,5 @@ services:
     environment:
       SERVER_NAME: kibana.example.org
       ELASTICSEARCH_HOSTS: '["http://172.16.1.27:9200"]'
+    ports:
+      - 5601:5601
