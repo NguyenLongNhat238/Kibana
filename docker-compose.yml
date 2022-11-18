@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.5.1
+    environment:
+      SERVER_NAME: kibana.example.org
+      ELASTICSEARCH_HOSTS: '["http://172.16.1.27:9200"]'
