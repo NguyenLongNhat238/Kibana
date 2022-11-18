@@ -4,10 +4,7 @@ services:
     container_name: Kibana-container
     image: kibana:8.5.1
     environment:
-      SERVER_NAME: kibana.example.org
       ELASTICSEARCH_URL: http://172.16.1.27:9200
       ELASTICSEARCH_HOSTS: http://172.16.1.27:9200
     ports:
       - 5601:5601
-    depends_on:
-      - openreal-backend_es_1
