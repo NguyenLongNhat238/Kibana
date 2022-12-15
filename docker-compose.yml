@@ -4,9 +4,9 @@ services:
     container_name: Kibana-container
     image: kibana:8.4.3
     environment:
-      - ELASTICSEARCH_USERNAME=elastic
-      - ELASTICSEARCH_PASSWORD=admin
-      - ELASTICSEARCH_URL=http://172.16.1.27:9200
-      - ELASTICSEARCH_HOSTS=http://172.16.1.27:9200
+      - ELASTICSEARCH_USERNAME="elastic"
+      - ELASTICSEARCH_PASSWORD="admin"
+      - ELASTICSEARCH_URL="http://172.16.1.27:9200"
+      - ELASTICSEARCH_HOSTS="http://172.16.1.27:9200"
     ports:
       - '5601:5601'
